@@ -1,0 +1,65 @@
+Ok, let's start with some important information
+
+all react components start with 
+
+function PascalCase(){
+    return( -- use parentheses if the return have more than one line --
+
+    -- the component will always return only one element, could be a <div></div>
+    or whatever, so if you want to create a component with more than one element
+    you can use the breakers: --
+
+    <>
+        <div>
+            <header>
+            </header>
+        </div>
+
+        <div>
+            <p>Yes baby</p>
+        </div>
+    </>
+
+    )
+}
+
+-- and of course, to use a component you shall export it when created and
+import it when used
+
+EX - export
+
+export default PascalCase;
+
+Ex - import
+
+on the top of the page for convention
+
+import PascalCase from './sheet-notes.txt'
+
+--IMPORTANT NOTE--
+
+in react, files jsx or tsx, all Javascript and Typescript shall be run inside {}
+outside it, it will be interpreted as text
+
+--------------------------------------------------------------------------------
+
+Componente de Classe
+
+import { Component } from 'react';
+
+class App extends Component {
+    render() {
+        return (
+            <h1>Aqui vai um jsx ou tsx normal</h1>
+        )
+    }
+}
+
+export App default;
+
+//A diferença de um componente de classe pra um de função (em código) é que o 
+de classe precisa ter a função render()
+
+--------------------------------------------------------------------------------
+
+14. Componentes de classe com estado (stateful)
